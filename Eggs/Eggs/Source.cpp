@@ -12,30 +12,40 @@ int main()
 
 	cout << " How many eggs do you like ";
 	cin >> input;
+	
+	if (input < 12)
 	{
-		if (input < 12)
-
-			total = input * eggcost;
+		total = input * eggcost;
 
 		cout << "it will cost $ " << total << endl;
-	}
-	{
-	if (input > 12)
 
-	remainder = input / 12;
-	total = remainder + dozen;
+	}
+	
+	
+	if (input > 12)
+	{
+	remainder = input % 12;
+	total = remainder * eggcost + dozen;
 
 	cout << "it will cost $ " << total << endl;
+	}
+
+	if (input = 12)
+	{
+
+		cout << "it will cost $ " << dozen << endl;
+
+
+
+	}
+	system("pause");
+
+	return 0;
 }
 
 
 
 
-
-
-	system("pause");
-
-	return 0;
 
 
 
@@ -53,9 +63,3 @@ int main()
 
 
 
-
-
-
-
-
-}
