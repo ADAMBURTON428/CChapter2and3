@@ -30,14 +30,14 @@ int main()
 	cout << "it will cost $ " << total << endl;
 	}
 
-	if (input = 12)
 	{
+		if ( input == 12 )
 
-		cout << "it will cost $ " << dozen << endl;
-
+	cout << "it will cost $ " << dozen << endl;
 
 
 	}
+	
 	system("pause");
 
 	return 0;
